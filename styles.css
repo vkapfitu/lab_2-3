@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.center {
+    align-self: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container {
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+}
+
+.title, .controls, .button {
+    flex: none;
+}
+
+.counter {
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rebeccapurple;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.total-item-counter {
+    text-decoration-color: red;
+}
+
+.in-progress-item-counter {
+    text-decoration-color: cornflowerblue;
+}
+
+.completed-item-counter {
+    text-decoration-color: limegreen;
+}
+
+.button {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: bisque;
+}
+
+.create-todo-button {
+    align-self: center;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    border-radius: 100%;
+    border: 4px solid bisque;
+    right: 0;
+}
+
+.create-todo-button:before,
+.create-todo-button:after {
+    content: "";
+    position: absolute;
+    background: white;
+}
+
+.create-todo-button:before {
+    left: 50%;
+    top: 6px;
+    bottom: 6px;
+    width: 5px;
+    transform: translateX(-50%);
+}
+
+.create-todo-button:after {
+    top: 50%;
+    left: 6px;
+    right: 6px;
+    height: 5px;
+    transform: translateY(-50%);
+}
+
+.create-todo-button:hover {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.create-todo-button:hover:before,
+.create-todo-button:hover:after {
+    background: bisque;
+    transition: 0.3s;
+}
+
+.todo-list {
+    flex: 1 1 0;
+    margin-top: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.todo-delete {
+    cursor: pointer;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 8px;
+}
+
+.todo-checkbox {
+    margin: 10px;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.todo-container:first-of-type {
+    border-top: 1px solid #333;
+}

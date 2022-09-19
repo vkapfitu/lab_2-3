@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+</head>
+<body>
+<div class="container center">
+    <div class="flex-between header-container">
+        <h1 class="center title">Todo list</h1>
+        <div class="button create-todo-button" onClick="createTodo()"></div>
+    </div>
+    <div class="flex-between controls">
+        <span class="counter total-item-counter">Total : <span id="item-count">0</span></span>
+        <span class="counter in-progress-item-counter">In progress: <span id="unchecked-count">0</span></span>
+        <span class="counter completed-item-counter">Completed: <span id="checked-count">0</span></span>
+    </div>
+    <ul id="todo-list" class="todo-list"></ul>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
