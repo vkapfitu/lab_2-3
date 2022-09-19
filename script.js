@@ -21,7 +21,7 @@ function createTodo() {
     if (text == null) {
         return;
     }
-    const todo = {id: id++, text, isChecked: Math.random() < 0.5};
+    const todo = {id: id++, text, isChecked: false};
     todoMap.set(todo.id, todo);
     renderTodoList();
 }
